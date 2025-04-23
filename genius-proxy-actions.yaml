@@ -1,0 +1,25 @@
+openapi: 3.1.0
+info:
+  title: Genius Proxy API
+  version: 1.0.0
+  description: Proxy pour la recherche Genius (récupère des chansons via leur API en utilisant un token sécurisé).
+servers:
+  - url: https://genius-proxy-fragment78.vercel.app
+paths:
+  /search:
+    get:
+      operationId: searchGeniusViaProxy
+      summary: Rechercher une chanson via Genius
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Résultats de recherche Genius
+          content:
+            application/json:
+              schema:
+                type: object
