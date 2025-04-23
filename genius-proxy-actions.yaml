@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: Proxy pour la recherche Genius (récupère des chansons via leur API en utilisant un token sécurisé).
 servers:
-  - url: https://genius-proxy-fragment78.vercel.app
+  - url: https://genius-proxy-adriens-projects-f3942cbe.vercel.app
 paths:
   /search:
     get:
